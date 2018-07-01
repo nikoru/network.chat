@@ -1,0 +1,12 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="ui.ChatWindow"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" stylesheets="style.css">
+    <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" editable="false"/>
+
+    <HBox>
+        <TextField fx:id="textField" promptText="Введите текст..." prefWidth="450" onAction="#sendText"/>
+        <Button HBox.hgrow="ALWAYS" text="Send Message" prefWidth="150" onAction="#sendText" />
+    </HBox>
+
+</VBox>
